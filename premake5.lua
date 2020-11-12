@@ -25,7 +25,7 @@ project "Hazel"
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include 
+	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include"
 	}
@@ -43,7 +43,7 @@ project "Hazel"
 
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Snadbox")
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
 	filter "configurations:Debug"
@@ -60,7 +60,7 @@ project "Hazel"
 
 
 project "Sandbox"
-	location "Snadbox"
+	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 
@@ -73,9 +73,9 @@ project "Sandbox"
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include 
+	includedirs 
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"Hazel/vendor/spdlog/include",
 		"Hazel/src"
 	}
 
