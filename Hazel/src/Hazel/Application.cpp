@@ -4,6 +4,7 @@ namespace Hazel
 {
 	Application::Application()
 	{
+		int b = 22;
 	}
 
 	Application::~Application()
@@ -14,9 +15,9 @@ namespace Hazel
 	{
 		while (true)
 		{
-
+			int c = 2;
 		}
 	}
 
-}
+}	
 

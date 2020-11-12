@@ -5,7 +5,7 @@ class Sandbox : public Hazel::Application
 public:
 	Sandbox()
 	{
-
+		int a = 0;
 	}
 	
 	~Sandbox()
