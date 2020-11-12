@@ -14,7 +14,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{b7fc885e-b70c-455c-9e90-bbbf6150965c}</ProjectGuid>
-    <RootNamespace>Snadbox</RootNamespace>
+    <RootNamespace>Sandbox</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>Sandbox</ProjectName>
   </PropertyGroup>
